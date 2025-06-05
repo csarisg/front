@@ -5,6 +5,7 @@ const prompt = require("prompt-sync")({ sigint: true });
 
 
 //condicion ? valorSiESVerdadero : valorSiEsFalso;
+
 // let hambre = prompt = prompt("tienes hambre?? (si/no):")
 //let hambre = true;
 //let accionar = hambre ? "comer algo" : "no comer nada"
