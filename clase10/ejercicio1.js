@@ -1,13 +1,6 @@
-const prompt = require("prompt-sync")({ sigint: true });
+//declarar dos variables: una con el nombre edad y la otra con el nombre peso. Después deberás asignarle un va
 
-let nombre = prompt("ingrese su nombre galactico: ");
-let edad = parseInt(prompt("cual es tu edad terrestre: "));
-let especie = prompt("cual es tu especie: (humano, alien, cyborg) ");
+const prompt = require('prompt-sync')();
 
-let tienePermiso = (edad>18 && especie !== "") || nombre === "capitana";
-
-const mensaje = tienePermiso
-    ?"bienvenido a bordo" + (nombre || "tripulante desconosido") + "!"
-    :"ecceso denegado";
-    
-console.log(mensaje);
+let edad = 22
+let peso = 43
