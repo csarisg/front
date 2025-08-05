@@ -1,0 +1,32 @@
+body {
+  background-color: #212121;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.termometro {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  font-size: 24px;
+}
+
+.temp {
+  margin: 8px 0;
+}
+
+/* Gradiente de azul a rojo */
+.t0 { color: #0000FF; }   
+.t5 { color: #3366FF; }
+.t10 { color: #3399FF; }
+.t15 { color: #33CCFF; }
+.t20 { color: #33FFCC; }
+.t25 { color: #66FF66; }
+.t30 { color: #FFCC33; }
+.t35 { color: #FF9933; }
+.t40 { color: #FF6633; }
+.t50 { color: #FF0000; }   

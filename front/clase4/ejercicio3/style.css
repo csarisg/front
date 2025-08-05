@@ -1,0 +1,40 @@
+body {
+  background-color: #fff;
+  color: #333;
+  padding: 40px;
+  font-family: 'Roboto', sans-serif;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 64px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.meta {
+  font-size: 16px;
+  color: #888;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 30px;
+}
+
+.autor {
+  color: #03A9F4; 
+  text-decoration: none;
+  font-weight: 400;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* párrafo en itálica y con otra tipografía */
+.especial {
+  font-style: italic;
+  font-family: 'Lora', serif;
+}
