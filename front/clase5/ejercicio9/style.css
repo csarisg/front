@@ -1,0 +1,41 @@
+body {
+    font-family: "Intel One Mono", monospace;
+    margin: 20px;
+    background-color: #121212;
+    color: #ffffff;
+    text-align: center; 
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+.fecha {
+    font-size: 0.9em;
+    color: #aaaaaa; 
+}
+
+.monto {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.ingreso {
+    color: #4caf50;
+}
+
+.salida {
+    color: #f44336; 
+}
+
