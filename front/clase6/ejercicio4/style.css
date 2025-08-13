@@ -1,0 +1,43 @@
+body {
+  background-color: #121212;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  background: linear-gradient(to right, #000cff, #0076ff, #00a2ff, #00c4ea, #00e0c8, #00ecb4, #00f792, #05ff61, #00ff53, #00ff43, #00ff2f, #00ff0b);
+  -webkit-background-clip: text; /* para navegadores WebKit */
+  -webkit-text-fill-color: transparent; /* para que el relleno sea transparente */
+  background-clip: text; /* estándar */
+  color: transparent; /* fallback */
+}
+
+  
+
+.barra {
+  width: 500px;
+  height: 30px;
+  background-color: #2c2c2c;
+  border-radius: 100px;
+  padding: 3px; /* espacio interior */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.progreso {
+  height: 100%;
+ background-image: linear-gradient(to right, #000cff, #0076ff, #00a2ff, #00c4ea, #00e0c8, #00ecb4, #00f792, #05ff61, #00ff53, #00ff43, #00ff2f, #00ff0b);
+  border-radius: 100px;
+}
+
+/* Porcentajes */
+.p10 { width: 10%; }
+.p25 { width: 25%; }
+.p50 { width: 50%; }
+.p75 { width: 75%; }
+.p90 { width: 90%; }

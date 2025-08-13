@@ -1,0 +1,66 @@
+body {
+  background-color: #121212;
+  color :white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.bandera {
+  width: 300px;
+  height: 200px;
+  margin: 15px 0;
+  display: flex;
+  box-shadow: 0 4px 12px rgba(65, 52, 141, 0.5);
+  border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Argentina */
+.argentina {
+  flex-direction: column;
+}
+.argentina .celeste { background-color: #74ACDF; flex: 1; }
+.argentina .blanca { background-color: white; flex: 1; }
+
+/* Alemania */
+.alemania {
+  flex-direction: column;
+}
+.alemania .negra { background-color: black; flex: 1; }
+.alemania .roja { background-color: #DD0000; flex: 1; }
+.alemania .amarilla { background-color: #FFCE00; flex: 1; }
+
+/* Francia */
+.francia {
+  flex-direction: row;
+}
+.francia .azul { background-color: #0055A4; flex: 1; }
+.francia .blanca { background-color: white; flex: 1; }
+.francia .roja { background-color: #EF4135; flex: 1; }
+
+/* Italia */
+.italia {
+  flex-direction: row;
+}
+.italia .verde { background-color: #009246; flex: 1; }
+.italia .blanca { background-color: white; flex: 1; }
+.italia .roja { background-color: #CE2B37; flex: 1; }
+
+/* Bélgica */
+.belgica {
+  flex-direction: row;
+}
+.belgica .negra { background-color: black; flex: 1; }
+.belgica .amarilla { background-color: #FFD90C; flex: 1; }
+.belgica .roja { background-color: #EF3340; flex: 1; }
+
+/* Rusia */
+.rusia {
+  flex-direction: column;
+}
+.rusia .blanca { background-color: white; flex: 1; }
+.rusia .azul { background-color: #0039A6; flex: 1; }
+.rusia .roja { background-color: #D52B1E; flex: 1; }

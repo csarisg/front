@@ -1,0 +1,35 @@
+<!-- verduleria -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Verdulería</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <main class="card" role="group" aria-label="Selección de fruta">
+    <h1>Verdulería</h1>
+    <p class="saludo">👋 Hola! Seleccioná la fruta<br>que desees.</p>
+
+    <div class="opciones">
+      <button class="opcion" type="button" aria-label="Manzana">🍎 Manzana</button>
+      <button class="opcion" type="button" aria-label="Banana">🍌 Banana</button>
+      <button class="opcion" type="button" aria-label="Durazno">🍑 Durazno</button>
+      <button class="opcion" type="button" aria-label="Frutilla">🍓 Frutilla</button>
+    </div>
+
+    <p class="nota" aria-live="polite" id="status"></p>
+  </main>
+
+  <script>
+    // feedback instantáneo (opcional, sin estilos inline)
+    document.querySelectorAll('.opcion').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.getElementById('status').textContent = `Elegiste: ${btn.textContent.trim()}`;
+      });
+    });
+  </script>
+</body>
+</html>

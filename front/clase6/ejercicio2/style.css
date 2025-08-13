@@ -1,0 +1,101 @@
+:root{
+  --bg: #0f1115;
+  --panel: #161a22;
+  --text: #e8eaf0;
+  --muted: #aac3ab;
+  --primary1: #ffffff;
+  --primary2: #000000;
+  --ring: #8ab4ff;
+  --shadow: 0 10px 30px rgba(0,0,0,.45);
+}
+
+*{ box-sizing: border-box; }
+
+html, body{
+  height: 100%;
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background-image: linear-gradient(to bottom, #000000, #070707, #0e0e0e, #131313, #171717, #272727, #393939, #4b4b4b, #737373, #9d9d9d, #cacaca, #f8f8f8);
+  color: var(--text);
+}
+
+/* centrado global, como prefieres */
+body{
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.card{
+  width: min(92vw, 440px);
+  background: var(--panel);
+  border-radius: 16px;
+  padding: 28px 26px 30px;
+  box-shadow: var(--shadow), 0 0 0 1px rgba(255,255,255,.04) inset;
+}
+
+h1{
+  margin: 0 0 8px;
+  font-size: 28px;
+  letter-spacing: .2px;
+}
+
+.saludo{
+  margin: 0 0 18px;
+  line-height: 1.5;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.opciones{
+  display: grid;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.opcion{
+  appearance: none;
+  border: 0;
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-size: 16px;
+  color: var(--text);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.04), rgba(0,0,0,.06)) padding-box,
+    linear-gradient(90deg, var(--primary1), var(--primary2)) border-box;
+  border: 1px solid transparent;
+  box-shadow: 0 6px 16px rgba(0,0,0,.35);
+  cursor: pointer;
+  transition: transform .08s ease, box-shadow .2s ease, border-color .2s ease, background .2s ease;
+}
+
+/* estado hover/focus accesible en dark */
+.opcion:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(0,0,0,.45);
+  border-color: rgba(12, 12, 12, 0.493);
+}
+
+.opcion:focus-visible{
+  outline: none;
+  box-shadow: 0 10px 22px rgba(0,0,0,.5), 0 0 0 3px rgba(8, 8, 8, 0.35);
+}
+
+.opcion:active{
+  transform: translateY(0);
+  box-shadow: 0 6px 16px rgba(0,0,0,.35);
+}
+
+/* línea de estado */
+.nota{
+  margin-top: 16px;
+  min-height: 22px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* responsive sutil */
+@media (min-width: 520px){
+  .opciones{ gap: 14px; }
+  .opcion{ font-size: 17px; padding: 15px 18px; }
+}

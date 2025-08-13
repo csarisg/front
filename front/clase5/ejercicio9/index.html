@@ -1,0 +1,58 @@
+<!-- Cuenta Bancaria
+index.html debe tener:
+
+un título h1 que diga: Mi cuenta.
+
+un título h2 que diga: Últimos movimientos.
+
+agregar 5 movimientos, que deben tener:
+
+un título h3 con el nombre de la operación (por ejemplo Depósito, Transferencia, Pago a XXX, etc.
+un elemento p con la fecha de la operación.
+un elemento p con el monto de la operación, con un signo más (+) adelante si ingresó dinero o un signo menos (-) si salió dinero de la cuenta.
+Poner un tipografía distinta a la default.
+Dar a los títulos un tamaño de fuente distinto al default.
+Dar a la fecha un tamaño de letra más pequeña y un color gris claro.
+Si el monto es un ingreso, debe tener un color verde, si es una salida, debe tener un color verde. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi cuenta</title>
+    
+    <!--Sincronización al archivo CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+    
+    <!-- Fuente desde Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Playwrite+AU+NSW:wght@100..400&display=swap" 
+rel="stylesheet">
+</head>
+<body>
+    <h1>Mi cuenta</h1>
+    <h2>Últimos movimientos</h2>
+
+    <h3>Depósito</h3>
+    <p class="fecha">05/08/2025</p>
+    <p class="monto ingreso">+$500.00</p>
+
+    <h3>Transferencia recibida</h3>
+    <p class="fecha">03/08/2025</p>
+    <p class="monto ingreso">+$1,200.00</p>
+
+    <h3>Pago a Supermercado </h3>
+    <p class="fecha">02/08/2025</p>
+    <p class="monto salida">-$320.50</p>
+
+    <h3>Retiro en cajero</h3>
+    <p class="fecha">01/08/2025</p>
+    <p class="monto salida">-$200.00</p>
+
+    <h3>Pago de servicios (Electricidad)</h3>
+    <p class="fecha">30/07/2025</p>
+    <p class="monto salida">-$150.75</p>
+</body>
+</html>
+

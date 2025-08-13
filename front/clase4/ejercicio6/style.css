@@ -1,0 +1,58 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 24px;
+  padding: 40px;
+  background-color: #212121;
+}
+
+.frutas {
+  list-style-type: none;
+  padding: 0;
+}
+
+.frutas li {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Colores por fruta */
+.manzana {
+  color: red;
+}
+
+.naranja {
+  color: orange;
+}
+
+.banano {
+  color: #FFD600; /* amarillo fuerte */
+}
+
+.limon {
+  color: #2ce41b; /* verde limón */
+}
+
+.arandanos {
+  color: #3F51B5; /* azul arándano */
+}
+
+.mora {
+  color: #6A1B9A; /* púrpura/mora */
+}
+
+.durazno {
+  color: #FFB74D; /* durazno claro */
+}
+
+.kiwi {
+  color: #708d2c; /* verde kiwi */
+}
+
+.coco {
+  color: #8D6E63; /* marrón claro */
+}
+
+.sandia {
+  color: #E53935; /* rojo sandía */
+}

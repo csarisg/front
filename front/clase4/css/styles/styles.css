@@ -1,0 +1,15 @@
+h1.verde {                       
+    color: green;
+}
+
+/* el . llama a verde */
+
+#unico {                              
+    color: blue;
+}
+
+.boton : yellow {                       
+    backgrounf-color: rgb(21, 107, 246);
+    border-radius: 1px;
+    color: white;
+    

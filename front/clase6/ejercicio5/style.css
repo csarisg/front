@@ -1,0 +1,69 @@
+body {
+  background-image: linear-gradient(to right, #4a0003, #4b0007, #4d000b, #4e000f, #4f0012, #4f0015, #4e0018, #4e001a, #4b001d, #480020, #450123, #410225);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: rgb(100, 31, 31);
+}
+
+.card {
+  background-color: #000000;
+  border-radius: 10px;
+  padding: 20px;
+  width: 350px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.header h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.header button {
+  background-color: transparent;
+  border: 1px solid #500000;
+  color: #aaa;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header button:hover {
+  border-color: #550034;
+  color: white;
+}
+
+.item {
+  background-image: linear-gradient(to right top, #141414, #1a1a1a, #202020, #262626, #2c2c2c);
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-left: 5px solid transparent;
+}
+
+.item h3 {
+  margin: 0 0 5px;
+  font-size: 16px;
+}
+
+.item p {
+  margin: 0;
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* Bordes degradados */
+.pink { border-image: linear-gradient(180deg, #fc0101, #420101) 1; }
+.purple { border-image: linear-gradient(180deg, #ff0077, #3b0023) 1; }
+.orange { border-image: linear-gradient(180deg, #cc00ff, #280035) 1; }
+

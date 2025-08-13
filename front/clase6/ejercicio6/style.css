@@ -1,0 +1,68 @@
+body {
+  background-color: #121212;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(67, 1, 85, 0.5);
+}
+
+.mensaje {
+  font-size: 16px;
+  color: #efb5fd;
+  margin-bottom: 20px;
+}
+
+.opciones {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.opciones button {
+  background-color: #2c2c2c;
+  border: 1px solid #444;
+  color: #d392f8;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.opciones button:hover {
+  border-color: #942ba1;
+  color: #6f068f;
+}
+
+.opciones .activo {
+  background-color: #5600b8;
+  color: #690c65;
+  border: none;
+}
+
+.continuar {
+  background-color: #310169;
+  color: #e5affaaf;
+  border: none;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(31, 1, 66, 0.925);
+  transition: background-color 0.2s ease;
+}
+
+.continuar:hover {
+  background-color: #5a54e6;
+}

@@ -1,0 +1,48 @@
+body {
+  background-color: #091410;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.container {
+  padding: 20px;
+}
+
+h2 {
+  color: rgb(1, 180, 90);
+}
+
+.lista {
+  background-image: linear-gradient(to right top, #00ff79, #00cd6c, #009e5b, #007047, #094530, #0b3f2c, #0b3928, #0c3324, #044e32, #006a3e, #008848, #00a64f);
+  padding: 10px;
+  border-radius: 5px;
+  width: 270px;
+}
+
+.lista h3 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.tarjeta {
+  background-color: rgb(11, 133, 72);
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  box-shadow: 0 1px 0 rgba(9,30,66,.25);
+}
+
+input {
+  width: 100%;
+  padding: 1px;
+  border-radius: 3px;
+  border: none;
+  margin-top: 5px;
+  background-color : rgb(1, 95, 59);
+}
+
+input::placeholder {
+  color: #000000;
+}
+
+
