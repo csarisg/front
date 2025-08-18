@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #555; /* Fondo oscuro detrás */
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.modal {
+  background: #f5f6f7;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  width: 400px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.modal h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.modal p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0 20px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #666;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.facebook {
+  background: #3b5998;
+}
+
+.twitter {
+  background: #1da1f2;
+}
+
+.reddit {
+  background: #000;
+}
+
+.shares {
+  margin: 15px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.shares strong {
+  font-weight: bold;
+}
+
+.close-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+.close-link:hover {
+  text-decoration: underline;
+}
