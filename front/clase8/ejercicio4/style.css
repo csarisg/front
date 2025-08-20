@@ -58,3 +58,9 @@ body {
 }
 
 
+@media (max-width: 600px){
+  .servicios-container {
+   grid-template-columns: 1fr;
+  }
+}
+
