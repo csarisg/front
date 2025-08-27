@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #fff;
+  color: #333;
+}
+
+/* Barra superior */
+.top-bar {
+  background: black;
+  color: white;
+  padding: 5px 20px;
+  font-size: 14px;
+  text-align: left;
+}
+.top-bar .lang {
+  float: right;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2582a7;
+  padding: 10px 0px;
+}
+header .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+header .logo span {
+  color: #fff;
+}
+header nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  background: #fff4cc;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #333333;
+}
+
+/* Banner */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-left img {
+  width: 100%;
+  max-width: 600px;
+  height: 270px;
+}
+.banner-right {
+  padding: 22px;
+  background-color: #93c7ce;
+  height: 230px;
+}
+.banner-right h2 {
+  font-size: 28px;
+}
+.banner-right button {
+  background: #0b195c;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+/* Productos */
+.productos {
+  padding: 40px 20px;
+}
+.productos h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+.filtros a {
+  margin: 0 5px;
+  text-decoration: none;
+  border: 1px solid rgb(15, 15, 124);
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  margin: 10px;
+  padding: 15px;
+  width: 180px;
+}
+.card img {
+  width: 100px;
+  height: auto;
+}
+.precio {
+  color: rgb(73, 120, 175);
+  font-weight: bold;
+}
+
+/* Contacto */
+.contacto {
+  padding: 30px;
+  background: #f9f9f9;
+}
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+.contacto input {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background: #bdcbfa;
+  color: white;
+}
+.contacto .botones {
+  margin-top: 15px;
+}
+.contacto .reset {
+  background: #99b6b8;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+.contacto .enviar {
+  background: rgb(0, 140, 255);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+/* Suscripción */
+.suscripcion {
+  display: flex;
+  justify-content: space-between;
+  background: #24409e;
+  padding: 20px;
+  align-items: center;
+}
+.sus-texto {
+  color: white;
+  font-weight: bold;
+}
+.sus-input input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.sus-input button {
+  padding: 8px 12px;
+  margin-left: 5px;
+  border: none;
+  background: #21bbb3;
+  color: white;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer {
+  background: #2582a7;
+  color: white;
+  padding: 20px;
+}
+.footer-info {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.footer-info div {
+  max-width: 200px;
+}
+.footer-info i {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.footer-logo {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.footer-logo span {
+  color: #3f41b4;
+}
+.copy {
+  font-size: 12px;
+}
