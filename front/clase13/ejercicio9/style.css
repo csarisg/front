@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: #000000; /* Modo oscuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.formulario {
+  background: linear-gradient(to right top, #000000, #1c0211, #260523, #29083c, #10145a);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(79, 56, 134, 0.5);
+  width: 300px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-box i {
+  position: absolute;
+  left: 10px;
+  color: #45364e;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px 10px 10px 35px;
+  border: 1px solid #100431;
+  border-radius: 4px;
+  background: #000000;
+  color: white;
+  font-size: 14px;
+}
+
+.input-box input::placeholder {
+  color: #aaa;
+}
+
+
+
+button {
+  padding: 10px;
+  border: none;
+  background: #05030f;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #070436;
+}

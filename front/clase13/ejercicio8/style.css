@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header fijo arriba */
+header {
+  background: #000000;
+  padding: 15px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* ul principal */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+}
+
+/* items del menú */
+nav ul li {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative; /* necesario para posicionar el submenu */
+}
+
+/* Submenú oculto */
+.sub-menu-oculto {
+  display: none;
+  position: absolute;
+  top: 100%; /* justo debajo del item */
+  left: 0;
+  background: #000000;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  border-radius: 4px;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* items del submenú */
+.sub-menu-oculto li {
+  padding: 10px 15px;
+  color: white;
+  white-space: nowrap;
+}
+
+.sub-menu-oculto li:hover {
+  background: #000000;
+}
+
+/* mostrar submenú al hacer hover */
+.sub-menu:hover .sub-menu-oculto {
+  display: block;
+}

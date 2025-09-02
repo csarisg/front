@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background: #2c167c; 
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+}
+
+.menu i {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.iconos {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.icono {
+  position: relative;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.icono i {
+  color: white;
+}
+
+.badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: rgb(150, 7, 7);
+  color: white;
+  font-size: 12px;
+  padding: 3px 6px;
+  border-radius: 50%;
+  font-weight: bold;
+}

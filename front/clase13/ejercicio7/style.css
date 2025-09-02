@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header fijo arriba */
+header {
+  background: #000000;
+  padding: 15px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* siempre por encima */
+}
+
+/* ul a la derecha */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;             /* para poner en línea */
+  justify-content: flex-end; /* alineado a la derecha */
+  gap: 25px;                 /* separación entre items */
+}
+
+/* estilo de los li */
+nav ul li {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}

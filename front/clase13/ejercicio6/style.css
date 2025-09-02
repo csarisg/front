@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background:linear-gradient(to right top, #5a1b7c, #652486, #712d90, #7c369b, #883fa5, #7251b7, #5361c6, #1f6fcf, #007ec8, #0086af, #008a8f, #178b71);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: #525151;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 280px;
+}
+
+.imagen-contenedor {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.imagen-contenedor img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Badges */
+.badge {
+  position: absolute;
+  left: 10px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.envio {
+  top: 10px;
+  background: blue;
+}
+
+.descuento {
+  top: 40px;
+  background: green;
+}
+
+/* Corazón */
+.corazon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: red;
+  cursor: pointer;
+}
+
+/* Info producto */
+.info {
+  padding: 15px;
+  text-align: center;
+}
+
+.info h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #000000;
+}
+
+.precio {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #27ae60;
+}

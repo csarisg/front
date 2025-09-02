@@ -1,0 +1,55 @@
+* {
+    background-color: black;
+
+.container {
+    width: 630px;
+    height: 450px;
+    border: 1px solid;
+    padding: 10px;
+    margin: 100px auto;
+    background-color: rgb(22, 22, 22);
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    display: inline-block;  
+    text-align: center;
+    line-height: 150px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+}
+/* box 1 y box 3 arriba de box 2 y box 4 */
+
+.one {
+    background-color: darkgoldenrod; 
+    position: relative;
+    z-index: 1;
+}
+
+.two {
+    background-color: darkcyan;
+    position: relative;
+    top: 100px;
+    right: 50px;
+
+}
+
+.three {
+    background-color: darkolivegreen;
+    position: relative;
+    top: 200px;
+    right: 100px;
+    z-index: 1;
+}
+
+.four {
+    background-color: darkred;
+    position: relative;
+    top: 310px;
+    right: 140px
+}
+
+
+
