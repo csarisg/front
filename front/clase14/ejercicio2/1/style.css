@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.contenedor {
+  width: 500px;
+}
+
+figure.sweet-marley {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+  height: 300px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+figure.sweet-marley img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+/* -------- TEXTO -------- */
+figure.sweet-marley figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  padding: 13px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+/* Estado normal → título arriba a la derecha */
+figure.sweet-marley h2 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin: 0;
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  transition: all 0.35s;
+  color: #383737;
+}
+
+figure.sweet-marley h2 span {
+  font-weight: bold;
+}
+
+figure.sweet-marley p {
+  font-size: 14px;
+  margin-top: 200px;
+  opacity: 0;
+  transition: opacity 0.35s;
+  color: #ffffff;
+}
+
+/* -------- HOVER -------- */
+figure.sweet-marley:hover img {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+figure.sweet-marley:hover h2 {
+  position: relative;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  padding: 10px 0;
+  border-bottom: 3px solid #fff;
+  color: aliceblue;
+}
+
+figure.sweet-marley:hover p {
+  opacity: 1;
+
+}
