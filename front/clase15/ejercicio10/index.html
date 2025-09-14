@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minishop - Product Detail</title>
+    <!-- Enlace CDN de Font Awesome para cargar los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Sección de la barra superior de información de contacto y envío -->
+    <header class="barra-superior-info">
+        <address class="barra-superior-contacto">
+            <span class="info-telefono"><i class="fas fa-phone"></i> + 1235 2355 98</span>
+            <span class="info-email"><i class="fas fa-envelope"></i> YOUREMAIL@EMAIL.COM</span>
+        </address>
+        <p class="info-envio">3-5 BUSINESS DAYS DELIVERY & FREE RETURNS</p>
+    </header>
+    <!-- Fin de la sección de la barra superior -->
+
+    <!-- Sección del encabezado principal y navegación del sitio -->
+    <nav class="navegacion-principal">
+        <a href="#" class="logo-sitio">Minishop</a>
+        <ul class="enlaces-navegacion">
+            <li><a href="#" class="enlace-nav">HOME</a></li>
+            <li class="menu-desplegable">
+                <a href="#" class="enlace-nav-desplegable">CATALOG<i class="fas fa-chevron-down"></i></a>
+                <!-- Los elementos del menú desplegable irían aquí -->
+            </li>
+            <li><a href="#" class="enlace-nav">ABOUT</a></li>
+            <li><a href="#" class="enlace-nav">BLOG</a></li>
+            <li><a href="#" class="enlace-nav">CONTACT</a></li>
+        </ul>
+        <a href="#" class="icono-carrito"><i class="fas fa-shopping-cart"></i> [0]</a>
+    </nav>
+    <!-- Fin de la sección del encabezado principal -->
+
+    <!-- Sección del banner o héroe con el título de la página (Shop) -->
+    <section class="banner-pagina">
+        <h1 class="titulo-banner">SHOP</h1>
+        <p class="ruta-navegacion">HOME <i class="fas fa-chevron-right"></i> SHOP</p>
+    </section>
+    <!-- Fin de la sección del banner de la página -->
+
+    <!-- Sección principal del contenido de detalles del producto -->
+    <main class="detalles-producto">
+        <!-- Contenedor para la imagen del producto -->
+        <figure class="imagen-producto">
+            <img src="https://preview.colorlib.com/theme/minishop/images/product-1.png" height="600" alt="Blue-Boots">
+        </figure>
+
+        <!-- Contenedor para la información textual del producto -->
+        <section class="info-producto">
+            <h2 class="nombre-producto">Nike Free RN 2019 ID</h2>
+            <p class="calificacion-producto">
+                <span class="estrellas-calificacion">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i> 5.0
+                </span>
+                <span class="conteo-calificacion">100 Rating</span>
+                <span class="conteo-vendido">500 Sold</span>
+            </p>
+            <p class="precio-producto">$120.00</p>
+            <p class="descripcion-corta">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisemaric country, in which roasted parts of sentences fly into your mouth.</p>
+            <p class="descripcion-larga">On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for her.</p>
+
+            <!-- Controles de opciones del producto (talla, cantidad, añadir al carrito) -->
+            <form class="opciones-producto">
+                <label for="talla-producto" class="etiqueta-talla">SMALL</label>
+                <select id="talla-producto" class="selector-talla">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <p class="cantidad-disponible">80 piece available</p>
+                <div class="control-cantidad">
+                    <button type="button" class="boton-restar"><i class="fas fa-minus"></i></button>
+                    <input type="text" value="1" class="entrada-cantidad">
+                    <button type="button" class="boton-sumar"><i class="fas fa-plus"></i></button>
+                </div>
+                <button type="submit" class="boton-agregar-carrito">Add to Cart</button>
+                <button type="button" class="boton-comprar-ahora">Buy now</button>
+            </form>
+        </section>
+    </main>
+    <!-- Fin de la sección principal de detalles del producto -->
+
+    <!-- Sección de pestañas de información adicional (Descripción, Fabricante, Reseñas) -->
+    <section class="pestañas-informacion">
+        <button class="pestaña-info pestaña-activa">Description</button>
+        <button class="pestaña-info">Manufacturer</button>
+        <button class="pestaña-info">Reviews</button>
+    </section>
+    <!-- Fin de la sección de pestañas de información adicional -->
+
+    <!-- Sección de contenido de la descripción (ejemplo, se mostraría según la pestaña activa) -->
+    <section class="contenido-descripcion-producto">
+        <p class="descripcion-completa">On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for her.</p>
+    </section>
+    <!-- Fin de la sección de contenido de la descripción -->
+
+    <!-- Sección del pie de página principal del sitio -->
+    <footer class="pie-pagina-principal">
+        <!-- Contenedor para las columnas de widgets del pie de página -->
+        <section class="columnas-pie-pagina">
+            <!-- Widget de información sobre Minishop -->
+            <article class="widget-pie-pagina widget-minishop">
+                <h3 class="titulo-widget">MINISHOP</h3>
+                <p class="texto-widget">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                <ul class="enlaces-redes-sociales">
+                    <li><a href="#" class="icono-social"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" class="icono-social"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="icono-social"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </article>
+
+            <!-- Widget de menú de navegación -->
+            <nav class="widget-pie-pagina widget-menu">
+                <h3 class="titulo-widget">MENU</h3>
+                <ul class="lista-enlaces-menu">
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Journal</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Widget de ayuda/información útil -->
+            <nav class="widget-pie-pagina widget-ayuda">
+                <h3 class="titulo-widget">HELP</h3>
+                <ul class="lista-enlaces-ayuda">
+                    <li><a href="#">Shipping Information</a></li>
+                    <li><a href="#">Returns & Exchange</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+                <ul class="lista-enlaces-ayuda">
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Widget de preguntas/contacto -->
+            <address class="widget-pie-pagina widget-preguntas">
+                <h3 class="titulo-widget">HAVE A QUESTIONS?</h3>
+                <p class="info-direccion"><i class="fas fa-map-marker-alt"></i> 203 Fake St. Mountain View, San Francisco, California, USA</p>
+                <p class="info-telefono-contacto"><i class="fas fa-phone-alt"></i> +2 392 3929 210</p>
+                <p class="info-email-contacto"><i class="fas fa-envelope"></i> info@yourdomain.com</p>
+            </address>
+        </section>
+
+        <!-- Sección inferior del pie de página (copyright) -->
+        <section class="pie-pagina-inferior">
+            <p class="texto-copyright">Copyright ©2025 All rights reserved | This template is made with <i class="fas fa-heart"></i> by Colorlib</p>
+        </section>
+    </footer>
+    <!-- Fin de la sección del pie de página -->
+
+    <!-- Botón de scroll para volver arriba -->
+    <a href="#" class="boton-volver-arriba"><i class="fas fa-arrow-up"></i></a>
+    <!-- Fin del botón de scroll para volver arriba -->
+
+</body>
+</html>
