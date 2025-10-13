@@ -1,0 +1,34 @@
+:root {
+  --color-fondo: #0f172a;       /* Azul marino muy oscuro */
+  --color-primario: #38bdf8;    /* Azul claro vibrante */
+  --color-secundario: #f472b6;  /* Rosa creativo */
+  --color-acento: #a3e635;      /* Verde lima */
+  --color-texto: #f9fafb;       /* Blanco casi puro */
+  --color-texto-suave: #9ca3af; /* Gris claro */
+  --color-borde: #1e293b;       /* Gris-azulado oscuro */
+}
+
+/* fondo blanco */
+/* :root {
+  --color-fondo: #ffffff;
+  --color-primario: #1d4ed8;    /* Azul moderno */
+  /* --color-secundario: #f59e0b;  /* Naranja creativo 
+  --color-acento: #10b981;      /* Verde profesional
+  --color-texto: #1f2937;       /* Gris oscuro accesible 
+  --color-texto-suave: #6b7280; /* Gris medio 
+  --color-borde: #e5e7eb;       /* Gris claro 
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--color-texto);
+}
+
+body {
+  min-height: 100vh ;
+  width: 100vw;
+  background-color: var(--color-fondo);
+}

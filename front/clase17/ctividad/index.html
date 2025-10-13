@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio – sara</title>
+  <link rel="stylesheet" href="./styles/style.css"/>
+  <!-- link icono-favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="https://cdn-icons-png.flaticon.com/512/4341/4341131.png" />
+  <meta name="description" content="portafolio creativo y funcional sara" />
+</head>
+<body>
+  <!--
+    ✅ TAREAS QUE DEBEN COMPLETAR LAS ALUMNAS (HTML)
+    1) Cambiar [TU NOMBRE] y la meta description.
+    2) Reemplazar el logotipo NA por tus iniciales.
+    3) Agregar un ítem en el menú: "Experiencia" y su sección.
+    4) Escribir el título y subtítulo del héroe (mensaje de valor personal).
+    5) Completar badges de skills (mínimo 4).
+    6) Redactar "Sobre mí" y elegir 4–6 etiquetas (pills).
+    7) Crear al menos 3 tarjetas de proyectos (duplicar la plantilla de .card).
+    8) Configurar el formulario: agregar campo "Asunto" y ajustar action="#".
+    9) Completar datos del footer y enlaces sociales reales.
+  -->
+
+  <!-- Header fijo con navegación -->
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#inicio">SC</a>
+      <nav class="menu" aria-label="Principal">
+        <a href="#inicio" class="menu__link">Inicio</a>
+        <a href="#sobre" class="menu__link">Sobre mí</a>
+        <a href="#proyectos" class="menu__link">Proyectos</a>
+        <!-- TODO: Agregar Experiencia en el menú y su sección -->
+        <a href="#experiencia" class="menu__link ">Experiencia</a> 
+        <a href="#contacto" class="menu__link">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO: 100% flexbox (dos columnas) -->
+    <section id="inicio" class="hero container">
+      <div class="hero__text">
+        <h1>mi valor es un trabajo <span class="resaltado">creativo</span> y <span class="resaltado">funcional</span></h1>
+        <p>Soy desarrolladora en formación con foco en front-end. Me apasiona crear interfaces claras y atractivas, 
+          combinando diseño y funcionalidad para mejorar la experiencia del usuario.</p>
+        <div class="cta">
+          <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+          <a href="#contacto" class="btn btn--ghost">Contactar</a>
+        </div>
+      </div>
+      <div class="hero__media">
+        <div class="badge-row">
+          <span class="badge">HTML5</span>
+          <span class="badge">CSS3</span>
+          <span class="badge">javascript</span>
+          <!-- TODO: Agregar al menos 3 badges más -->
+        </div>
+        <div class="mockup" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ: layout en columnas con flex y wrap -->
+    <section id="sobre" class="sobre container">
+      <div class="sobre__col sobre__bio">
+        <h2>Sobre mí</h2>
+        <p>soy una programadora con conocimientos en css y html, he estudiado en ada con profecionales de la programacio
+           me encanta aprender cosas nuevas y.
+        </p>
+        <ul class="pill-list">
+          <li class="pill">front-end</li>
+          <li class="pill">diseño-web</li>
+          <li class="pill">trabajo-en-equipo</li>
+          <li class="pill">resolucion-de-problemas</li>
+          <!-- TODO: Añadir 3–5 etiquetas más -->
+        </ul>
+      </div>
+      <div class="sobre__col sobre__datos">
+        <div class="dato">
+          <strong>Experiencia:</strong>
+          <span>Académica</span>
+        </div>
+        <div class="dato">
+          <strong>Ubicación:</strong>
+          <span>Bogota, Colombia</span>
+        </div>
+        <div class="dato">
+          <strong>Disponibilidad:</strong>
+          <span>freelance</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS: tarjetas en filas con flex-wrap -->
+    <section id="proyectos" class="proyectos container">
+      <div class="section-head">
+        <h2>Proyectos destacados</h2>
+        <p>Maquetados con Flexbox y enfoque mobile-first.</p>
+      </div>
+      <div class="cards">
+        <!-- PLANTILLA DE CARD: DUPLICAR AL MENOS 3 VECES -->
+        <article class="card">
+          <div class="card__media" aria-hidden="true"></div>
+          <div class="card__body">
+            <h3 class="card__title">[Nombre del proyecto]</h3>
+            <p class="card__text">[Qué resolviste, tecnologías y tu rol.]</p>
+            <div class="card__actions">
+              <a class="btn btn--sm btn--primary" href="#">Demo</a>
+              <a class="btn btn--sm btn--ghost" href="#">Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media" aria-hidden="true"></div>
+          <div class="card__body">
+            <h3 class="card__title">[Nombre del proyecto]</h3>
+            <p class="card__text">[Qué resolviste, tecnologías y tu rol.]</p>
+            <div class="card__actions">
+              <a class="btn btn--sm btn--primary" href="#">Demo</a>
+              <a class="btn btn--sm btn--ghost" href="#">Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media" aria-hidden="true"></div>
+          <div class="card__body">
+            <h3 class="card__title">[Nombre del proyecto]</h3>
+            <p class="card__text">[Qué resolviste, tecnologías y tu rol.]</p>
+            <div class="card__actions">
+              <a class="btn btn--sm btn--primary" href="#">Demo</a>
+              <a class="btn btn--sm btn--ghost" href="#">Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media" aria-hidden="true"></div>
+          <div class="card__body">
+            <h3 class="card__title">[Nombre del proyecto]</h3>
+            <p class="card__text">[Qué resolviste, tecnologías y tu rol.]</p>
+            <div class="card__actions">
+              <a class="btn btn--sm btn--primary" href="#">Demo</a>
+              <a class="btn btn--sm btn--ghost" href="#">Código</a>
+            </div>
+          </div>
+        </article>
+        <!-- TODO: duplicar esta tarjeta -->
+      </div>
+    </section>
+
+
+    <!-- seccion experiencia -->
+     <section id="experiencia" class="container">
+      <div class="section-head">
+        <h2>Proyectos destacados</h2>
+        <p>Maquetados con Flexbox y enfoque mobile-first.</p>
+      </div>
+      <div class="cards">
+        <!-- PLANTILLA DE CARD: DUPLICAR AL MENOS 3 VECES -->
+        <article class="card">
+          <div class="card__media" aria-hidden="true"></div>
+          <div class="card__body">
+            <h3 class="card__title">[Nombre del proyecto]</h3>
+            <p class="card__text">[Qué resolviste, tecnologías y tu rol.]</p>
+            <div class="card__actions">
+              <a class="btn btn--sm btn--primary" href="#">Demo</a>
+              <a class="btn btn--sm btn--ghost" href="#">Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media" aria-hidden="true"></div>
+          <div class="card__body">
+            <h3 class="card__title">[Nombre del proyecto]</h3>
+            <p class="card__text">[Qué resolviste, tecnologías y tu rol.]</p>
+            <div class="card__actions">
+              <a class="btn btn--sm btn--primary" href="#">Demo</a>
+              <a class="btn btn--sm btn--ghost" href="#">Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media" aria-hidden="true"></div>
+          <div class="card__body">
+            <h3 class="card__title">[Nombre del proyecto]</h3>
+            <p class="card__text">[Qué resolviste, tecnologías y tu rol.]</p>
+            <div class="card__actions">
+              <a class="btn btn--sm btn--primary" href="#">Demo</a>
+              <a class="btn btn--sm btn--ghost" href="#">Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media" aria-hidden="true"></div>
+          <div class="card__body">
+            <h3 class="card__title">[Nombre del proyecto]</h3>
+            <p class="card__text">[Qué resolviste, tecnologías y tu rol.]</p>
+            <div class="card__actions">
+              <a class="btn btn--sm btn--primary" href="#">Demo</a>
+              <a class="btn btn--sm btn--ghost" href="#">Código</a>
+            </div>
+          </div>
+        </article>
+        <!-- TODO: duplicar esta tarjeta -->
+      </div>
+    </section>
+
+    <!-- TODO: Crear sección Experiencia -->
+    <!--
+    <section id="experiencia" class="container">
+      ...
+    </section>
+    -->
+
+    <!-- CONTACTO: formulario en columna con flex -->
+    <section id="contacto" class="contacto container">
+      <div class="section-head">
+        <h2>Contacto</h2>
+        <p>¿Trabajamos juntas/os? Escribime y te respondo a la brevedad.</p>
+      </div>
+      <form class="form" action="#" method="post">
+        <div class="form__row">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+        </div>
+        <div class="form__row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="tu@email.com" required />
+        </div>
+        <!-- TODO: Agregar campo Asunto -->
+         <div class="form__row">
+          <label for="asunto">Asunto</label>
+          <input id="asunto" name="asunto" type="text" placeholder="ingresa un titulo" required />
+        </div>
+        <div class="form__row">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contame sobre tu idea" required></textarea>
+        </div>
+        <div class="form__actions">
+          <button class="btn btn--primary" type="submit">Enviar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <small>© 2025 sara. Hecho con ❤ y Flexbox.</small>
+      <div class="social">
+        <!-- TODO: Reemplazar con enlaces reales -->
+        <a class="social__link" href="https://github.com/csarisg" aria-label="GitHub">GitHub</a>
+        <a class="social__link" href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a class="social__link" href="mailto:csaragonzalez@gmail.com" aria-label="Email">Email</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
