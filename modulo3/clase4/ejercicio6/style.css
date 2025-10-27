@@ -1,0 +1,75 @@
+/* ======== ESTILOS GENERALES ======== */
+body {
+  background-color: #240a0a;
+  color: #550404;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 40px;
+}
+
+/* Contenedor principal */
+main {
+  display: inline-block;
+  background-color: #000000;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+/* ======== FORMULARIO ======== */
+form {
+  text-align: left;
+  margin-top: 20px;
+  
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border: 1px solid #2c1111;
+  border-radius: 6px;
+  background-color: #2e0317;
+  color: #000000;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #3d041c;
+  box-shadow: 0 0 5px #310312;
+}
+
+/* ======== BOTÓN ======== */
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  background-color: #3b0213;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #9e0042;
+}
+
+/* ======== RESULTADO ======== */
+#resultado {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #3b0417;
+}

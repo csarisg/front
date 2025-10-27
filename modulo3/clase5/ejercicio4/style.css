@@ -1,0 +1,45 @@
+/* ======== ESTILOS GENERALES ======== */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 50px;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* ======== MODO OSCURO ======== */
+.modo-oscuro {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* ======== MODO CLARO ======== */
+.modo-claro {
+  background-color: #f5f5f5;
+  color: #121212;
+}
+
+/* Contenedor principal */
+main {
+  display: inline-block;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ======== BOTÓN ======== */
+#toggle-tema {
+  margin-top: 25px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4d4d4d;
+  color: rgb(36, 35, 35);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#toggle-tema:hover {
+  background-color: #737474;
+}

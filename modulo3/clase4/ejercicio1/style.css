@@ -1,0 +1,78 @@
+/* ======== ESTILOS GENERALES ======== */
+
+/* Fondo oscuro, texto claro y fuente legible */
+body {
+  background-color: #101c1d; /* Modo oscuro */
+  color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  text-align: center; /* Centra todo el texto */
+  margin: 0;
+  padding: 40px;
+}
+
+/* Contenedor principal */
+main {
+  display: inline-block; /* Centra el bloque principal */
+  background-color: #1e1e1e; /* Fondo gris oscuro */
+  padding: 30px 40px;
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Sombra suave */
+}
+
+/* ======== FORMULARIO ======== */
+
+form {
+  text-align: left; /* Los textos del formulario alineados a la izquierda */
+}
+
+/* Etiquetas (labels) */
+label {
+  display: block; /* Que cada etiqueta ocupe una línea completa */
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Campos de entrada */
+input {
+  width: 100%; /* Que ocupen todo el ancho disponible */
+  padding: 8px;
+  margin-top: 6px;
+  border: 1px solid #444; /* Borde gris oscuro */
+  border-radius: 6px;
+  background-color: #2a2a2a; /* Fondo del campo */
+  color: #f5f5f5; /* Texto claro */
+}
+
+/* Estilo cuando el usuario hace clic dentro del campo */
+input:focus {
+  outline: none;
+  border-color: #035a4e; /* Borde turquesa */
+  box-shadow: 0 0 5px #023a32; /* Brillo suave */
+}
+
+/* Botón de enviar */
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  background-color: #04352e; /* Verde turquesa */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+/* Efecto al pasar el cursor por el botón */
+button:hover {
+  background-color: #062c28;
+}
+
+/* ======== RESULTADO ======== */
+
+/* Sección donde se muestran los datos ingresados */
+section#resultado {
+  margin-top: 25px;
+  font-size: 18px;
+}

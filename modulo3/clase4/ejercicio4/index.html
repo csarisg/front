@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selección de opciones</title>
+  <!-- Enlace al archivo CSS externo -->
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <main>
+    <h1>Selecciona tus preferencias</h1>
+
+    <!-- Formulario con opciones de color y pasatiempos -->
+    <form id="formulario">
+
+      <!-- ===== OPCIONES DE COLOR (radio) ===== -->
+      <fieldset>
+        <legend>Elige tu color favorito:</legend>
+
+        <label>
+          <input type="radio" name="color" value="Rojo">
+          Rojo
+        </label>
+
+        <label>
+          <input type="radio" name="color" value="Azul">
+          Azul
+        </label>
+
+        <label>
+          <input type="radio" name="color" value="Verde">
+          Verde
+        </label>
+      </fieldset>
+
+      <!-- ===== OPCIONES DE PASATIEMPOS (checkbox) ===== -->
+      <fieldset>
+        <legend>Selecciona tus pasatiempos:</legend>
+
+        <label>
+          <input type="checkbox" name="pasatiempo" value="Leer">
+          Leer
+        </label>
+
+        <label>
+          <input type="checkbox" name="pasatiempo" value="Viajar">
+          Viajar
+        </label>
+
+        <label>
+          <input type="checkbox" name="pasatiempo" value="Deportes">
+          Deportes
+        </label>
+      </fieldset>
+
+      <!-- Botón para mostrar selección -->
+      <button type="submit">Mostrar selección</button>
+    </form>
+
+    <!-- Sección donde se mostrarán los resultados -->
+    <section id="resultado"></section>
+  </main>
+
+  <!-- Enlace al archivo JavaScript externo -->
+  <script src="script.js"></script>
+</body>
+</html>

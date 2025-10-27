@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Límite de caracteres</title>
+  <!-- Enlace al archivo CSS externo -->
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <main>
+    <h1>Comentario</h1>
+
+    <!-- Textarea con máximo de 150 caracteres -->
+    <label for="mensaje">Escribe tu comentario (máx. 150 caracteres):</label>
+    <textarea id="mensaje" name="mensaje" maxlength="150" rows="5" required></textarea>
+
+    <!-- Contador de caracteres restantes -->
+    <p id="contador">150 caracteres restantes</p>
+  </main>
+
+  <!-- Enlace al archivo JavaScript externo -->
+  <script src="script.js"></script>
+</body>
+</html>

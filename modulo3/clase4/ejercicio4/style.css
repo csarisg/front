@@ -1,0 +1,72 @@
+/* ======== ESTILOS GENERALES ======== */
+body {
+  background-color: #121212; /* Fondo oscuro */
+  color: #f5f5f5; /* Texto claro */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 40px;
+}
+
+/* Contenedor principal */
+main {
+  display: inline-block;
+  background-color: #1e1e1e;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  width: 80%;
+  max-width: 500px;
+  text-align: left;
+}
+
+/* ======== FORMULARIO ======== */
+fieldset {
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-top: 20px;
+}
+
+legend {
+  font-weight: bold;
+  color: #01584d;
+}
+
+label {
+  display: block;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #015e51; /* color personalizado para los inputs */
+  margin-right: 8px;
+}
+
+/* ======== BOTÓN ======== */
+button {
+  display: block;
+  margin: 25px auto 10px auto;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  background-color: #023f37;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #02645a;
+}
+
+/* ======== RESULTADO ======== */
+#resultado {
+  margin-top: 25px;
+  font-size: 18px;
+  color: #ccc;
+  text-align: center;
+}
