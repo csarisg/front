@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Navegable - Modo Oscuro</title>
+
+  <!-- Bulma -->
+  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
+  <!-- Font Awesome (opcional para íconos) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- CSS personalizado -->
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="has-background-black has-text-light">
+
+  <!-- NAVBAR -->
+  <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <!-- Logo -->
+      <a class="navbar-item" href="#">
+        <img src="data:image/jpeg;base64,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" width="90" alt="Logo">
+      </a>
+
+      <!-- Burger Menu (responsive en móviles) -->
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menuPrincipal">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <!-- Menú principal -->
+    <div id="menuPrincipal" class="navbar-menu">
+      <!-- Enlaces a la izquierda -->
+      <div class="navbar-start">
+        <a class="navbar-item has-text-light" href="#">Inicio</a>
+        <a class="navbar-item has-text-light" href="#">Acerca de</a>
+        <a class="navbar-item has-text-light" href="#">Contacto</a>
+      </div>
+
+      <!-- Botón a la derecha -->
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary is-rounded">
+              <strong><i class="fas fa-sign-in-alt"></i> Iniciar sesión</strong>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTENIDO -->
+  <section class="section has-text-centered">
+    <div class="container">
+      <h1 class="title has-text-light">🌙 Bienvenido</h1>
+      <p class="subtitle has-text-grey-lighter">
+        Explora un navbar oscuro y totalmente responsivo con Bulma.
+      </p>
+    </div>
+  </section>
+
+  <!-- Script responsivo (Burger Menu) -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const burger = document.querySelector('.navbar-burger');
+      const menu = document.querySelector('#menuPrincipal');
+      
+      burger.addEventListener('click', () => {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+      });
+    });
+  </script>
+
+</body>
+</html>
+

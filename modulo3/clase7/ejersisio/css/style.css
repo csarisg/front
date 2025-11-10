@@ -1,0 +1,22 @@
+/* Personalización adicional */
+body {
+  text-align: center;
+}
+
+/* Espaciado adicional entre secciones */
+.section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Efecto de sombra en la tarjeta */
+.card {
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  border-radius: 15px;
+}
+
+/* Hover del botón */
+.button:hover {
+  background-color: #3273dc;
+  color: white;
+}

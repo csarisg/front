@@ -1,0 +1,57 @@
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Efecto hover en los enlaces del navbar */
+.navbar-item:hover {
+  background-color: #1f1f1f;
+  color: #fff !important;
+}
+
+/* Caja del formulario */
+.box {
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+/* Inputs y textarea */
+.input.is-dark, .textarea.is-dark {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.input.is-dark:focus, .textarea.is-dark:focus {
+  border-color: #3273dc;
+  box-shadow: 0 0 8px rgba(50, 115, 220, 0.4);
+}
+
+/* Botón de envío */
+.button.is-primary {
+  background-color: #3273dc;
+  border: none;
+}
+
+.button.is-primary:hover {
+  background-color: #275bb5;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+/* Responsividad */
+@media screen and (max-width: 768px) {
+  .column.is-half {
+    width: 90%;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+}

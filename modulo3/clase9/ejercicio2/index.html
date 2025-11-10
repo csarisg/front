@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario con Íconos</title>
+
+  <!-- Bulma -->
+  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
+  <!-- Font Awesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- CSS personalizado -->
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="has-background-dark has-text-light">
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title has-text-centered has-text-primary-light">📝 Registro con Íconos</h1>
+      <h2 class="subtitle has-text-centered has-text-grey-lighter">
+        Completa los campos con estilo y claridad gracias a Bulma.
+      </h2>
+
+      <form method="POST" class="box has-background-black-ter">
+
+        <!-- Nombre completo -->
+        <div class="field">
+          <label class="label has-text-light" for="nombre">Nombre completo</label>
+          <div class="control has-icons-left">
+            <input class="input is-dark" type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Correo electrónico -->
+        <div class="field">
+          <label class="label has-text-light" for="email">Correo electrónico</label>
+          <div class="control has-icons-left">
+            <input class="input is-dark" type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Contraseña -->
+        <div class="field">
+          <label class="label has-text-light" for="password">Contraseña</label>
+          <div class="control has-icons-left">
+            <input class="input is-dark" type="password" id="password" name="password" placeholder="Crea una contraseña" required>
+            <span class="icon is-small is-left">
+              <i class="fas fa-lock"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Confirmar contraseña -->
+        <div class="field">
+          <label class="label has-text-light" for="confirmar">Confirmar contraseña</label>
+          <div class="control has-icons-left">
+            <input class="input is-dark" type="password" id="confirmar" name="confirmar" placeholder="Repite la contraseña" required>
+            <span class="icon is-small is-left">
+              <i class="fas fa-check-circle"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Descripción -->
+        <div class="field">
+          <label class="label has-text-light" for="descripcion">Descripción personal</label>
+          <div class="control">
+            <textarea class="textarea is-dark" id="descripcion" name="descripcion" placeholder="Cuéntanos algo sobre ti..."></textarea>
+          </div>
+        </div>
+
+        <!-- Botón de envío -->
+        <div class="field has-text-centered">
+          <button class="button is-primary is-rounded is-medium mt-3">
+            <span class="icon">
+              <i class="fas fa-paper-plane"></i>
+            </span>
+            <span>Enviar Registro</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Constelaciones y el Universo</title>
+  <!-- Enlace a Bulma -->
+  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
+  <!-- Enlace a tu CSS -->
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="has-background-black has-text-light" id="body">
+
+  <!-- Contenedor principal -->
+  <section class="section">
+    <div class="container has-text-centered">
+
+      <!-- Encabezado -->
+      <h1 class="title has-text-grey">Constelaciones y el Universo</h1>
+      <h2 class="subtitle has-text-grey">
+        Descubre los misterios del cielo nocturno, sus estrellas y las historias que guardan las constelaciones.
+      </h2>
+
+      <!-- Botón de modo claro/oscuro -->
+      <button id="modoBtn" class="button is-dark is-rounded mt-4">
+        Cambiar a modo claro ☀️
+      </button>
+
+    </div>
+  </section>
+
+  <!-- Sistema de columnas -->
+  <section class="section">
+    <div class="container">
+      <div class="columns is-multiline">
+
+        <!-- Columna 1 -->
+        <div class="column is-full-mobile is-half-tablet is-one-third-desktop">
+          <div class="box has-background-black-ter">
+            <figure class="image is-4by3">
+              <img src="https://enlasestrellas.wordpress.com/files/2007/12/orion_constelacion.jpg" alt="Constelación de Orión" class="image-dark">
+            </figure>
+            <h3 class="title is-5 has-text-grey mt-3">Orión</h3>
+            <p class="has-text-grey">Una de las constelaciones más brillantes del cielo, visible desde ambos hemisferios. Representa a un cazador mitológico.</p>
+          </div>
+        </div>
+
+        <!-- Columna 2 con offset -->
+        <div class="column is-full-mobile is-half-tablet is-one-third-desktop is-offset-desktop-1">
+          <div class="box has-background-black-ter">
+            <figure class="image is-4by3">
+              <img src="https://st3.depositphotos.com/18024562/33509/v/450/depositphotos_335091992-stock-illustration-ursa-major-big-bear-constellation.jpg" alt="Osa Mayor" class="image-dark">
+            </figure>
+            <h3 class="title is-5 has-text-grey mt-3">Osa Mayor</h3>
+            <p class="has-text-grey">Famosa por contener el asterismo del “Carro Mayor”. Ha guiado a navegantes durante siglos gracias a la Estrella Polar.</p>
+          </div>
+        </div>
+
+        <!-- Columna 3 con columnas anidadas -->
+        <div class="column is-full-mobile is-half-tablet is-one-third-desktop">
+          <div class="box has-background-black-ter">
+            <h3 class="title is-5 has-text-grey">Cruz del Sur y vecinas</h3>
+            <p class="has-text-grey mb-4">Visible en el hemisferio sur, la Cruz del Sur ha sido símbolo de orientación y espiritualidad en muchas culturas.</p>
+
+            <!-- Columnas anidadas -->
+            <div class="columns is-mobile">
+              <div class="column">
+                <figure class="image is-square">
+                  <img src="https://us.123rf.com/450wm/elartico/elartico1905/elartico190500103/122105568-the-constellation-southern-cross-in-the-night-starry-sky-vector-illustration-of-the-concept-of.jpg" alt="Cruz del Sur" class="image-dark">
+                </figure>
+              </div>
+              <div class="column">
+                <figure class="image is-square">
+                  <img src="https://starwalk.space/gallery/images/centaurus-sh-autumn/es/1920x1080.jpg" alt="Centauro" class="image-dark">
+                </figure>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer has-background-black-ter has-text-centered">
+    <p class="has-text-grey-lighter has-text-weight-semibold">
+      © 2025 Constelaciones del Universo | Creado con ❤️ y Bulma CSS
+    </p>
+  </footer>
+
+  <!-- Script para el modo claro/oscuro -->
+  <script>
+    const botonModo = document.getElementById("modoBtn");
+    const cuerpo = document.getElementById("body");
+
+    botonModo.addEventListener("click", () => {
+      const modoOscuro = cuerpo.classList.toggle("modo-claro");
+
+      if (modoOscuro) {
+        cuerpo.classList.remove("has-background-black", "has-text-light");
+        cuerpo.classList.add("has-background-light", "has-text-dark");
+        botonModo.classList.remove("is-dark");
+        botonModo.classList.add("is-dark");
+        botonModo.textContent = "Cambiar a modo oscuro 🌙";
+      } else {
+        cuerpo.classList.add("has-background-black", "has-text-light");
+        cuerpo.classList.remove("has-background-light", "has-text-dark");
+        botonModo.classList.add("is-light");
+        botonModo.classList.remove("is-dark");
+        botonModo.textContent = "Cambiar a modo claro ☀️";
+      }
+    });
+  </script>
+
+</body>
+</html>

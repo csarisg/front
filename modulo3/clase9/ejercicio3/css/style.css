@@ -1,0 +1,38 @@
+
+body {
+  text-align: center;
+  background-color: #121212;
+}
+
+/* Navbar con sombra */
+.navbar {
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Hover de los enlaces */
+.navbar-item:hover {
+  background-color: #222;
+  color: #f5f5f5 !important;
+}
+
+/* Botón principal */
+.button.is-primary {
+  background-color: #000000;
+  border: none;
+}
+
+.button.is-primary:hover {
+  background-color: #131314;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+/* Responsividad del contenido */
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 1.8rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+}

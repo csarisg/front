@@ -1,0 +1,43 @@
+body {
+  text-align: center;
+  background-color: #000000;
+}
+
+/* Imagen ligeramente oscura para fondo oscuro */
+.image-dark {
+  border-radius: 10px;
+  filter: brightness(0.85);
+}
+
+/* Caja elegante */
+.box {
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.1);
+}
+
+/* Hover animado */
+.box:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+/* Espaciado entre secciones */
+.section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Ajustes modo claro */
+.modo-claro {
+  background-color: #f5f5f5 !important;
+  color: #000000 !important;
+}
+
+.modo-claro .box {
+  background-color: white !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.modo-claro img {
+  filter: brightness(1);
+}

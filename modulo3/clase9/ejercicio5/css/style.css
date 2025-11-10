@@ -1,0 +1,25 @@
+body {
+  background-color: #121212;
+  color: #f5f5f5;
+  text-align: center;
+}
+
+/* Caja contenedora */
+.box {
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+  padding: 2rem;
+}
+
+/* Botón de peligro */
+.button.is-danger.is-outlined {
+  border-color: #ff3860;
+  color: #ff3860;
+  transition: 0.3s;
+}
+
+.button.is-danger.is-outlined:hover {
+  background-color: #ff3860;
+  color: #fff;
+  transform: scale(1.08);
+}

@@ -1,0 +1,33 @@
+body {
+  text-align: center;
+  background-color: #121212;
+}
+
+/* Caja del formulario */
+.box {
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 150, 255, 0.2);
+}
+
+/* Inputs modo oscuro */
+.input.is-dark,
+.textarea.is-dark {
+  background-color: #1e1e1e;
+  border: 1px solid #3a3a3a;
+  color: #f5f5f5;
+}
+
+.input.is-dark:focus,
+.textarea.is-dark:focus {
+  border-color: #3273dc; /* color Bulma primary */
+  box-shadow: 0 0 5px rgba(50, 115, 220, 0.5);
+}
+
+/* Botón */
+.button.is-primary:hover {
+  background-color: #276cda;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
