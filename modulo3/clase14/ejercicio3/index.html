@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Actividad 3 - Flujo Cliente-Servidor</title>
+
+  <!-- Bulma -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+  >
+</head>
+
+<body class="has-background-light">
+
+  <section class="section">
+    <div class="container has-text-centered">
+
+      <!-- Título -->
+      <h1 class="title">
+        Editar Publicación
+      </h1>
+
+      <!-- Caja del formulario -->
+      <div class="box">
+
+        <!-- Título actual -->
+        <p class="mb-2">
+          <strong>Título actual:</strong>
+        </p>
+        <p id="tituloActual" class="mb-4">
+          Mi publicación original
+        </p>
+
+        <!-- Input para editar -->
+        <input
+          id="nuevoTitulo"
+          class="input mb-3"
+          type="text"
+          placeholder="Nuevo título"
+        >
+
+        <!-- Botón guardar -->
+        <button id="btnGuardar" class="button is-primary">
+          Guardar cambios
+        </button>
+
+      </div>
+
+      <!-- Mensaje de respuesta -->
+      <div id="mensaje" class="notification is-hidden mt-4"></div>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

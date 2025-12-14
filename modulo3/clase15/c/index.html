@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>API REST – Manejo de Errores</title>
+
+  <!-- Bulma -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+  >
+</head>
+
+<body class="has-background-light">
+
+  <section class="section">
+    <div class="container has-text-centered">
+
+      <h1 class="title">
+        Manejo de Errores y Respuestas HTTP
+      </h1>
+
+      <!-- Botones de prueba -->
+      <div class="buttons is-centered mb-5">
+
+        <button id="btnOk" class="button is-success">
+          GET válido
+        </button>
+
+        <button id="btn404" class="button is-danger">
+          GET 404
+        </button>
+
+        <button id="btnError" class="button is-warning">
+          Error de conexión
+        </button>
+
+      </div>
+
+      <!-- Mensajes -->
+      <div id="mensaje" class="notification is-hidden"></div>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

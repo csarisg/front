@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Actividad 4 - Perfil de Usuario</title>
+
+  <!-- Bulma -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+  >
+</head>
+
+<body class="has-background-light">
+
+  <section class="section">
+    <div class="container has-text-centered">
+
+      <!-- Título -->
+      <h1 class="title">
+        Perfil de Usuario
+      </h1>
+
+      <!-- Tarjeta del perfil -->
+      <div class="card mx-auto" style="max-width: 400px;">
+
+        <!-- Contenido principal -->
+        <div class="card-content">
+
+          <!-- Nombre -->
+          <p id="nombre" class="title is-4">
+            Nombre del usuario
+          </p>
+
+          <!-- Email -->
+          <p id="email" class="subtitle is-6">
+            email@ejemplo.com
+          </p>
+
+          <hr>
+
+          <!-- Datos adicionales -->
+          <p>
+            <strong>ID:</strong>
+            <span id="idUsuario"></span>
+          </p>
+
+          <p>
+            <strong>Último acceso:</strong>
+            <span id="ultimoAcceso"></span>
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

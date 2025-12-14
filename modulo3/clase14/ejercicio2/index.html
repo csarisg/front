@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Actividad 2 - HTTP</title>
+
+  <!-- Bulma CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+  >
+</head>
+
+<body class="has-background-light">
+
+  <!-- Sección principal -->
+  <section class="section">
+    <div class="container has-text-centered">
+
+      <!-- Título -->
+      <h1 class="title">
+        Métodos HTTP y Respuestas
+      </h1>
+
+      <!-- Botones para simular escenarios -->
+      <div class="buttons is-centered">
+
+        <!-- POST -->
+        <button id="btnRegistro" class="button is-success">
+          Enviar formulario de registro
+        </button>
+
+        <!-- DELETE -->
+        <button id="btnEliminar" class="button is-danger">
+          Eliminar producto inexistente
+        </button>
+
+        <!-- PATCH -->
+        <button id="btnActualizar" class="button is-warning">
+          Actualizar correo
+        </button>
+
+        <!-- GET -->
+        <button id="btnPedidos" class="button is-info">
+          Ver pedidos recientes
+        </button>
+      </div>
+
+      <!-- Mensaje de respuesta -->
+      <div id="mensaje" class="notification is-hidden mt-5"></div>
+
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Manipulación de Recursos API REST</title>
+
+  <!-- Bulma -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+  >
+</head>
+
+<body class="has-background-light">
+
+  <section class="section">
+    <div class="container has-text-centered">
+
+      <h1 class="title">
+        Manipulación de Posts (API REST)
+      </h1>
+
+      <!-- =========================
+           FORMULARIO POST
+           ========================= -->
+      <div class="box">
+        <h2 class="subtitle">Crear nuevo post (POST)</h2>
+
+        <input id="tituloPost" class="input mb-2" type="text" placeholder="Título">
+        <textarea id="contenidoPost" class="textarea mb-3" placeholder="Contenido"></textarea>
+
+        <button id="btnCrear" class="button is-success">
+          Crear post
+        </button>
+      </div>
+
+      <!-- =========================
+           FORMULARIO PATCH
+           ========================= -->
+      <div class="box">
+        <h2 class="subtitle">Editar título del post ID 1 (PATCH)</h2>
+
+        <input id="nuevoTitulo" class="input mb-3" type="text" placeholder="Nuevo título">
+
+        <button id="btnEditar" class="button is-warning">
+          Actualizar título
+        </button>
+      </div>
+
+      <!-- =========================
+           DELETE
+           ========================= -->
+      <div class="box">
+        <h2 class="subtitle">Eliminar post ID 1 (DELETE)</h2>
+
+        <button id="btnEliminar" class="button is-danger">
+          Eliminar post
+        </button>
+      </div>
+
+      <!-- Mensajes -->
+      <div id="mensaje" class="notification is-hidden mt-4"></div>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

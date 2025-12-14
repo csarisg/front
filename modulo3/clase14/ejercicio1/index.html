@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Biblioteca API</title>
+
+  <!-- Bulma CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+  >
+</head>
+
+<body class="has-background-light">
+
+  <!-- Contenedor principal -->
+  <section class="section">
+    <div class="container has-text-centered">
+
+      <!-- Título -->
+      <h1 class="title">
+        Gestión de Biblioteca
+      </h1>
+
+      <!-- Botones que simulan las URIs REST -->
+      <div class="buttons is-centered">
+
+        <!-- GET /api/libros -->
+        <button id="btnLibros" class="button is-link">
+          Ver todos los libros
+        </button>
+
+        <!-- GET /api/libros/58 -->
+        <button id="btnLibro" class="button is-info">
+          Ver libro ID 58
+        </button>
+
+        <!-- GET /api/libros/58/resenas -->
+        <button id="btnResenas" class="button is-warning">
+          Ver reseñas del libro 58
+        </button>
+
+        <!-- GET /api/libros?genero=ciencia-ficcion -->
+        <button id="btnFiltrar" class="button is-primary">
+          Filtrar ciencia ficción
+        </button>
+
+        <!-- POST /api/libros/58/resenas -->
+        <button id="btnAgregar" class="button is-danger">
+          Agregar reseña
+        </button>
+      </div>
+
+      <!-- Caja para mostrar resultados -->
+      <div class="box mt-5 has-text-left">
+        <pre id="resultado">
+Aquí se mostrará el resultado...
+        </pre>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
